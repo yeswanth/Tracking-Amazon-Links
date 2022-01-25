@@ -7,7 +7,7 @@ class LocalStorageHandler {
 
     static getLinks(){
         let links = JSON.parse(localStorage.getItem('links'));
-        if(links == undefined || links == null){
+        if(links === undefined || links === null){
             links = {}
         }
         return links;
