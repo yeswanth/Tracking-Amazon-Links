@@ -48,7 +48,7 @@ class ShowLinks extends React.Component {
         // let status = this.getUpdate(link);
 
         return (<tr>
-            <td><a href={fullLink} target='_blank'>{link}</a></td>
+            <td><a href={fullLink} target='_blank' rel="noreferrer">{link}</a></td>
             <td><h6>{this.state.linksStatus[link]}</h6></td>
             <td><button type="button" onClick={this.deleteLink.bind(this,link)}> Delete </button></td>
         </tr>)
